@@ -1,0 +1,15 @@
+table{
+	border-collapse: collapse;
+}
+th, td{
+	border: 1px solid black;
+	text-align: center;
+}
+a{
+	margin-right: 10px;
+}
+textarea{
+	width: 200px;
+	height: 200px;
+	resize: none;
+}

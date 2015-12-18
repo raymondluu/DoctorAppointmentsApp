@@ -1,0 +1,20 @@
+<html ng-app='myApp'>
+	<head>
+		<title></title>
+		<link rel='stylesheet' type='text/css' href='style/style.css'>
+		<script src='javascript/angular.min.js'></script>
+		<script src="javascript/angular-route.min.js"></script>
+		<script src="javascript/angular-messages.min.js"></script>
+		<script type='text/javascript' src='javascript/app.js'></script>
+		<script type='text/javascript' src='javascript/factories/UserFactory.js'></script>
+		<script type='text/javascript' src='javascript/factories/AppointmentFactory.js'></script>
+		<script type='text/javascript' src='javascript/controllers/MainController.js'></script>
+		<script type='text/javascript' src='javascript/controllers/DashboardController.js'></script>
+		<script type='text/javascript' src='javascript/controllers/AppointmentController.js'></script>
+	</head>
+	<body>
+		<div ng-controller='MainController'>
+			<div ng-view=''></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<a href='/'>Logout</a>
+<h1>Doctor's Appointments</h1>
+<p>Search <input type='text' ng-model='customerFilter'></input></p>
+<table>
+	<thead>
+		<tr>
+			<th>Date</th>
+			<th>Time</th>
+			<th>Patient Name</th>
+			<th>Complain</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat='appointment in formattedAppointments'><!-- filter by oldest to newest and only display current and future ones-->
+			<td>{{appointment.date}}</td>
+			<td>{{appointment.time}}</td>
+			<td>{{appointment.user.name}}</td>
+			<td>{{appointment.complaint}}<button>Cancel</button></td>
+		</tr>
+	</tbody>
+</table>
+<p><a href='#/new_appointment'><button>Add New Appointment</button></a></p>
+Welcome {{user.name}}
+<br>
+Appointments: {{appointments}}
+<br>
+Formatted: {{formattedAppointments}}

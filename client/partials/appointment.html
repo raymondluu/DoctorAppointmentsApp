@@ -1,0 +1,6 @@
+<h1>New Appointment</h1>
+<p>Date: <input type='date' ng-model='appointment.date'></input></p><!-- type='date' not supported in IE -->
+<p>Time: <input type='time' ng-model='appointment.time'></input></p><!-- type='date' not supported in IE or Firefox-->
+<p>Complain: <textarea ng-model='appointment.complaint'></textarea></p>
+<a href='#/'><button>Cancel</button></a>
+<button ng-click='addAppointment()'>Add Appointment</button>
